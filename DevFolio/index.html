@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Michael Grey Nguyen | Cybersecurity Analyst</title>
+
+    <meta
+      name="keywords"
+      content="Michael Grey Nguyen, Cybersecurity, GPG, Encryption, Password Cracking, Wireshark, MITM, ARP Poisoning, AWS IAM, Cloud Security, Security+"
+    />
+    <meta
+      name="description"
+      content="Cybersecurity portfolio of Michael Grey Nguyen featuring hands-on labs, projects, and credentials."
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./assets/favicon.png" />
+
+    <!-- DevFolio CSS -->
+    <link rel="preload" as="style" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- ScrollReveal + your config -->
+    <script defer src="./javascript/scrollreveal.min.js"></script>
+    <script defer src="./javascript/scrollveal.js"></script>
+
+    <!-- Alignment fixes (safe, minimal) -->
+    <style>
+      /* Keep project thumbnails consistent (16:9) and aligned */
+      #projects .project-wrapper__image .thumbnail {
+        overflow: hidden;
+        border-radius: 12px;
+      }
+      #projects .project-wrapper__image img.img-fluid {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        display: block;
+      }
+
+      /* Profile image sizing */
+      #about .about-wrapper__image img.img-fluid {
+        width: 450px;
+        max-width: 100%;
+        height: auto;
+        border-radius: 14px;
+        display: block;
+      }
+
+      /* ✅ CONTACT: Center everything under the line */
+      #contact .contact-wrapper {
+        text-align: center;
+      }
+      #contact .contact-actions {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 14px;
+        flex-wrap: wrap;
+        margin-top: 16px;
+      }
+      /* Make the buttons visually consistent when centered */
+      #contact .contact-actions a {
+        min-width: 180px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- HERO SECTION -->
+    <div id="hero">
+      <section class="container">
+        <h1 class="hero-title">
+          Hi, my name is
+          <span class="text-color-main name">Michael Grey Nguyen</span>
+          <br />
+          I’m a Cybersecurity Analyst.
+        </h1>
+
+        <p class="hero-cta">
+          <a class="cta-btn cta-btn--hero" href="#about">Learn more</a>
+        </p>
+      </section>
+
+      <a href="#about" class="scroll-down-link" aria-label="scroll-down">
+        <div class="scroll-down"></div>
+      </a>
+    </div>
+    <!-- END HERO -->
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+
+        <div class="row about-wrapper">
+          <div class="about-wrapper__image">
+            <img class="img-fluid" src="./assets/profile.jpg" alt="Profile Image" />
+          </div>
+
+          <div class="about-wrapper__info">
+            <p class="about-wrapper__info-text">
+              I’m a cybersecurity professional with an M.S. in Computer Information Systems (Security) from Boston University.
+            </p>
+
+            <p class="about-wrapper__info-text">
+              This portfolio highlights hands-on security work in encryption, password auditing, MITM testing,
+              browser security hardening, and cloud IAM security foundations.
+            </p>
+
+            <span class="about-wrapper__cta">
+              <a
+                href="./assets/Michael_Grey_Nguyen_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="cta-btn cta-btn--resume"
+              >
+                View Resume
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END ABOUT -->
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="container">
+        <div class="project-wrapper">
+          <h2 class="section-title dark-blue-text">Projects, Labs & Credentials</h2>
+
+          <!-- Project 1 -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Encryption with GPG (CS695 Lab 3)</h3>
+              <p class="project-wrapper__text-info">
+                Symmetric and asymmetric encryption using GPG in Kali Linux (AES/TWOFISH, key generation, signing, compression behavior).
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="./assets/CS695_mgnguyen_Lab3.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                >
+                  View PDF
+                </a>
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="./assets/CS695_mgnguyen_Lab3.pdf" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img class="img-fluid" src="./assets/thumb-gpg-encryption.jpg" alt="GPG Encryption thumbnail" />
+                </div>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Password Cracking (CS695 Lab 4)</h3>
+              <p class="project-wrapper__text-info">
+                Online/offline password cracking using Hydra and John the Ripper with mitigation discussion.
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="./assets/CS695_mgnguyen_Lab4.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                >
+                  View PDF
+                </a>
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="./assets/CS695_mgnguyen_Lab4.pdf" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img class="img-fluid" src="./assets/thumb-password-lab.jpg" alt="Password Cracking thumbnail" />
+                </div>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Web Browser Security (CS695 Lab 5)</h3>
+              <p class="project-wrapper__text-info">
+                Firefox privacy/security settings, cookies & tracking inspection, extensions, and TLS/certificate checks.
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="./assets/CS695_mgnguyen_Lab5.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                >
+                  View PDF
+                </a>
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="./assets/CS695_mgnguyen_Lab5.pdf" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img class="img-fluid" src="./assets/thumb-browser-lab.jpg" alt="Browser Security thumbnail" />
+                </div>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">ARP Cache Poisoning & MITM (CS690 Lab 2)</h3>
+              <p class="project-wrapper__text-info">
+                ARP poisoning + MITM experiments with Wireshark capture and Telnet/Netcat manipulation.
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="./assets/CS690-LAB2-Nguyen.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                >
+                  View PDF
+                </a>
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="./assets/CS690-LAB2-Nguyen.pdf" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img class="img-fluid" src="./assets/thumb-arp-mitm.jpg" alt="ARP MITM thumbnail" />
+                </div>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 5 -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">AWS IAM & Security Foundations (CS690 Lab 4)</h3>
+              <p class="project-wrapper__text-info">
+                AWS account hardening and IAM tasks (MFA, CloudTrail logging, encryption keys, permission boundaries).
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="./assets/CS690-LAB4-Nguyen.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                >
+                  View PDF
+                </a>
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="./assets/CS690-LAB4-Nguyen.pdf" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img class="img-fluid" src="./assets/thumb-aws-iam.jpg" alt="AWS IAM thumbnail" />
+                </div>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 6 -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Track Social Media Connections (SQL Term Project)</h3>
+              <p class="project-wrapper__text-info">
+                SQL/database design project for tracking social connections, users, and account types.
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="./assets/NguyenMichael_TermProjectIteration5.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                >
+                  View PDF
+                </a>
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="./assets/NguyenMichael_TermProjectIteration5.pdf" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img class="img-fluid" src="./assets/thumb-termproject.jpg" alt="SQL Term Project thumbnail" />
+                </div>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 7 -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Book Dino (Generative AI Reading Recommender)</h3>
+              <p class="project-wrapper__text-info">
+                Generative-AI concept for recommending books for students; includes agile artifacts and delivery planning.
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="./assets/Book%20Dino%20Presentation%20(Final).pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                >
+                  View PDF
+                </a>
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="./assets/Book%20Dino%20Presentation%20(Final).pdf" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img class="img-fluid" src="./assets/thumb-bookdino.jpg" alt="Book Dino thumbnail" />
+                </div>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 8 -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">HealthyEats SDLC Process & Risk Analysis (CS682)</h3>
+              <p class="project-wrapper__text-info">
+                SDLC comparison (Waterfall/RAD/Agile) with roadmap and risk analysis.
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="./assets/NguyenMichaelGlikbergJudith_CS682Assignment2%2001.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                >
+                  View PDF
+                </a>
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a
+                href="./assets/NguyenMichaelGlikbergJudith_CS682Assignment2%2001.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="thumbnail rounded">
+                  <img class="img-fluid" src="./assets/thumb-healthyeats.jpg" alt="HealthyEats thumbnail" />
+                </div>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 9 -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Microsoft Xbox Game Pass: Digital Transformation Strategy (Presentation)</h3>
+              <p class="project-wrapper__text-info">
+                Strategy presentation covering market expansion, analysis, and subscription optimization.
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="./assets/Microsoft%20Game%20Pass.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                >
+                  View PDF
+                </a>
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="./assets/Microsoft%20Game%20Pass.pdf" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img class="img-fluid" src="./assets/thumb-gamepass.jpg" alt="Game Pass thumbnail" />
+                </div>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 10 -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">CISO Challenges at Cottage Health: HIPAA Risk Strategy Analysis</h3>
+              <p class="project-wrapper__text-info">
+                Healthcare cybersecurity case study identifying top risks to ePHI and applying enterprise risk strategies.
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="./assets/NguyenMichael%20assign4.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                >
+                  View PDF
+                </a>
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="./assets/NguyenMichael%20assign4.pdf" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img class="img-fluid" src="./assets/thumb-cottage-health.jpg" alt="Cottage Health thumbnail" />
+                </div>
+              </a>
+            </div>
+          </article>
+
+          <!-- Credential 1 -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">CompTIA Security+ (SY0-701) Training Completion</h3>
+              <p class="project-wrapper__text-info">
+                Completion certificate for OnDemand Security+ SY0-701 curriculum.
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="./assets/OnDemand%2BSecurity%2B%2BCompletion%2B-%2BSecurity%2B%2BV7%2B20.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                >
+                  View Certificate
+                </a>
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a
+                href="./assets/OnDemand%2BSecurity%2B%2BCompletion%2B-%2BSecurity%2B%2BV7%2B20.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="thumbnail rounded">
+                  <img class="img-fluid" src="./assets/thumb-securityplus.jpg" alt="Security+ thumbnail" />
+                </div>
+              </a>
+            </div>
+          </article>
+
+          <!-- Credential 2 -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">AmeriCorps Service Certification (Jumpstart for Young Children)</h3>
+              <p class="project-wrapper__text-info">
+                AmeriCorps State and National service certification letter for Jumpstart for Young Children, Inc.
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="./assets/Jumpstart%2BLetter.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                >
+                  View Letter
+                </a>
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="./assets/Jumpstart%2BLetter.pdf" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img class="img-fluid" src="./assets/thumb-jumpstart.jpg" alt="Jumpstart thumbnail" />
+                </div>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- END PROJECTS -->
+
+    <!-- CONTACT (✅ centered buttons) -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+
+        <div class="contact-wrapper">
+          <p class="contact-wrapper__text">Interested in connecting? Email me:</p>
+
+          <!-- ✅ Centered under the line -->
+          <div class="contact-actions">
+            <a
+              href="mailto:mgnguyen@bu.edu?subject=Portfolio%20Inquiry"
+              class="cta-btn cta-btn--resume"
+            >
+              Email (mailto)
+            </a>
+
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=mgnguyen@bu.edu&su=Portfolio%20Inquiry"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="cta-btn cta-btn--resume"
+            >
+              Email via Gmail
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END CONTACT -->
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <a href="#hero" class="back-to-top" aria-label="go back to top">
+          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+        </a>
+
+        <div class="social-links">
+          <a
+            href="https://www.linkedin.com/in/michaelgnguyen/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="linkedin"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+
+          <a
+            href="https://github.com/michaeln007"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="github"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+
+        <hr />
+
+        <p class="footer__text">&copy; <span id="year"></span> Michael Grey Nguyen</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+    <!-- Tilt Hover (your local scripts) -->
+    <script src="./javascript/vanilla-tilt.min.js"></script>
+    <script src="./javascript/valtilt.js"></script>
+  </body>
+</html>
